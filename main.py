@@ -3,7 +3,11 @@ def main():
     reg_hours = 40
     reg_rate = 18.25
     ov_rate = 27.78
-
+    regular_wage = reg_hours * 18.25
+    overtime = workhours - reg_hours 
+    overtime_wage = overtime * 27.78 
+    total_wage = overtime_wage + regular_wage
+ 
    ##################################################
    # Code your program here
    ##################################################
@@ -16,7 +20,7 @@ def main():
     print(f"Overtime hours: {overtime} Overtime Charge: {overtime_wage:.2f}")
     print(f"Total wage : {total_wage:.2f}")
 
-   ##################################################
+   ################################################## 
    # Do not delete the return statement
    ##################################################
     return regular_wage, overtime_wage, total_wage
